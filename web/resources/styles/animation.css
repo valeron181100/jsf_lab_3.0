@@ -1,0 +1,88 @@
+:root{
+    --sidePanelWidth: 20%;
+    --primary-color: #d50000;
+    --primary-light: #ff5131;
+    --primary-dark: #9b0000;
+
+    --secondary-color: #ffa726;
+    --secondary-light: #ffd95b;
+    --secondary-dark: #c77800;
+
+    --text-on-primary: white;
+    --text-on-secondary: black;
+
+}
+
+.flyOutAnimClass{   
+    animation-name: flyOut;
+    animation-duration:0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.flyInAnimClass{
+    animation-name: flyIn;
+    animation-duration:0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+.buttonAnimClass{
+    animation-name: buttonSizeSmall;
+    animation-duration:0.08s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.buttonAnim2Class{
+    animation-name: buttonSizeIncrease;
+    animation-duration:0.08s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes flyOut{
+    from {
+        left: calc(-1*(var(--sidePanelWidth) + 5%));
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+
+@keyframes flyIn{
+    from {
+        left: 0%;
+    }
+    to{
+        left: calc(-1*(var(--sidePanelWidth) + 5%));
+    }
+}
+
+@keyframes buttonSizeSmall{
+    from{
+        transform: scale(1.0, 1.0);
+    }
+
+    to{
+        transform: scale(0.7, 0.7);
+    }
+}
+
+@keyframes buttonSizeIncrease{
+    from{
+        transform: scale(0.7, 0.7);
+    }
+
+    to{
+        transform: scale(1.0, 1.0);
+    }
+}

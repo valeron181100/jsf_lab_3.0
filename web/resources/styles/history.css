@@ -1,0 +1,66 @@
+#history{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1%;
+    overflow: auto;
+}
+
+#history h1{
+    
+    align-self: center;
+    font-family: var(--default-font);
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 7vh;
+
+}
+
+.historyList{
+    height: 100vh;
+    list-style: none;
+    margin-top: 2%;
+}
+
+.historyList li{
+    width: 50vw;
+    height: 50px;
+    border-radius: 5px;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%; 
+    transition: 0.3s;
+}
+
+.historyList li:hover{
+    background: #ffe1e4;
+}
+
+.historyList li span{
+    font-family: var(--default-font);
+    font-size: calc(100vmin / 25);
+    font-style: italic;
+}
+
+.empty-history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.empty-history span{
+    display: block;
+    font-size: 30px;
+    font-family: var(--default-font);
+}
+
+.empty-history img{
+    width: 15vh;
+}

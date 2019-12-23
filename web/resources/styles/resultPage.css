@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+table{
+    border-collapse: collapse;
+    font-size: 3rem;
+
+}
+th,td{
+    width: 2em;
+    border: solid 2px black;
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 2rem
+}
+
+#hack-timer{
+    font-size: 6rem;
+    color: black;
+    display: block;
+}

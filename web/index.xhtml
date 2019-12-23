@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+   <f:view>
+      <h:head>
+         <title>Lab3 Start Page</title>
+         <h:outputStylesheet name="startPage.css" library="styles"/>
+          <h:outputScript name="startPage.js" library="js"/>
+      </h:head>
+      <h:body onload="onStartPageLoaded()">
+          <table>
+              <tbody>
+              <tr>
+                  <td>
+                      <div id="start-header-panel">
+                          <span class="authorName">Бондарь Валерий</span>
+                          <h:graphicImage styleClass="avatarImage" value="resources/images/logo-color.png"/>
+                          <span class="underText">Группа: P3211</span>
+                          <span class="subText">Вариант 69</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="red-btn-container">
+                          <h:graphicImage id="kim-img" value="resources/images/kimirsen.png"/>
+                          <a href="https://www.youtube.com/watch?v=A116j-Ok5N4" class="red-btn">Старт</a>
+                      </div>
+                  </td>
+                  <td>
+                      <div id="clock">
+                          <div id="clock-time">22:16</div>
+                          <div id="clock-date">Fri, 20 Dec</div>
+                      </div>
+                  </td>
+              </tr>
+              </tbody>
+          </table>
+          <div id="bgline"></div>
+      </h:body>
+   </f:view>
+</html>
+
+
+
+
+
+<!--<div id="start-container">
+              <div id="start-header-panel">
+                  <span class="authorName">Бондарь Валерий</span>
+                  <h:graphicImage styleClass="avatarImage" value="resources/images/logo-color.png"/>
+                  <span class="underText">Группа: P3211</span>
+                  <span class="subText">Вариант 69</span>
+              </div>
+              <div class="red-btn-container">
+                  <h:graphicImage id="kim-img" value="resources/images/kimirsen.png"/>
+                  <a href="https://www.youtube.com/watch?v=A116j-Ok5N4" class="red-btn">Старт</a>
+              </div>
+              <div id="clock">
+                  <div id="clock-time">22:16</div>
+                  <div id="clock-date">Fri, 20 Dec</div>
+              </div>
+          </div>
+          <div id="bgline"></div>-->
